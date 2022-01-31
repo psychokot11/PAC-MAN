@@ -1,1 +1,7 @@
-
+.grid {
+  display: grid;
+  flex-wrap: wrap;
+  width: 560px;
+  height: 560px;
+  border: solid black;
+}
