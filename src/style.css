@@ -1,5 +1,5 @@
 .grid {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   width: 560px;
   height: 560px;
@@ -11,8 +11,8 @@
   height: 20px;
 }
 
-.pac-dpt {
-  background-color: aquamarine;
+.pac-dot {
+  background-color: rgb(52, 252, 185);
   border: 5px solid white;
   box-sizing: border-box;
 }
@@ -21,7 +21,12 @@
   background-color: blue;
 }
 
-.power-pallet {
-  background-color: aquamarine;
+.power-pellet {
+  background-color: rgb(52, 252, 185);
+  border-radius: 10px;
+}
+
+.pac-man {
+  background-color: yellow;
   border-radius: 10px;
 }
