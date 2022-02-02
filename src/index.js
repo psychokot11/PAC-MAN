@@ -214,6 +214,21 @@ document.addEventListener("DOMContentLoaded", () => {
       if (ghost.isScared) {
         squares[ghost.currentIndex].classList.add("scared-ghost");
       }
+
+      //if the scared ghost gets eaten by PAC-MAN
+      if (
+        ghost.isScared &&
+        squares[ghost.currentIndex].classList.contains("pac-man")
+      ) {
+        squares[ghost.currentIndex].classList.remove(
+          ghost.className,
+          "ghost",
+          "scared-ghost"
+        );
+        ghost.currentIndex = ghost.startIndex;
+        score += 100;
+        squares[ghost.currentIndex].classList.add(ghost.className);
+      }
     }, ghost.speed);
   }
 });
